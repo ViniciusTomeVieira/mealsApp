@@ -15,16 +15,19 @@ class MainDrawer extends StatelessWidget {
         style: TextStyle(
           fontFamily: 'RobotoCondensed',
           fontSize: 24,
-          fontWeight: FontWeight.bold
+          fontWeight: FontWeight.bold,
         ),
       ),
-      onTap: onTap(),
+      onTap: () {
+        onTap();
+      },
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       child: Column(
         children: <Widget>[
           Container(
